@@ -2,3 +2,9 @@
   background-color: hsl(220, 31%, 36%);
   text-align: center;
 }
+
+.rowify{
+  display:flex; 
+  flex-direction:row;
+  padding-left: 5vmin;
+}

@@ -1,0 +1,23 @@
+.skills-container {
+    text-align: center;
+}
+
+.skills {
+    font-weight: bold;
+    text-align: center;
+    column-span: none;
+    padding-top: 0vh;
+    color: rgb(97, 97, 102);
+    text-align: left;
+}
+
+.skill-title {
+    font-weight: 1200;
+    padding-left: 2vh;
+    color: rgb(20, 98, 161);
+    font-size: 3vmin;
+}
+
+
+
+

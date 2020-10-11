@@ -22,7 +22,7 @@ export default class Sidebar extends Component {
             <div className="text-center">
                 <img src={require('../pictures/myPic.JPG')} style={imageStyle}/>
               <h1 id="profilePic" className='myName'><a href="index.html">Benson Fan</a></h1>
-              <p className="myPicDescription">Gamer, Athlete, and Programmer</p>
+              <p className="myPicDescription">Gamer - Athlete - Programmer</p>
             </div>
             <nav className='navSocialMedia'>
               <ul style={listStyle}>

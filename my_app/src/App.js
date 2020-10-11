@@ -5,6 +5,7 @@ import Skills from './components/skills';
 import Sidebar from './components/sidebar';
 import Navbar from './components/navbar';
 import Projects from './components/projects';
+import CollegeHeader from './components/collegeHeader'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -17,7 +18,10 @@ function App() {
       <Skills/>
       <div className='rowify'>
         <Sidebar/>
-        <Projects/>
+        <div>
+        <CollegeHeader/>
+        <Projects/> 
+        </div>
       </div>
 
 

@@ -8,12 +8,17 @@ import Projects from './components/projects';
 import CollegeHeader from './components/collegeHeader'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+// this will give percentage of page scrolled -> "--scroll" is value of percentage scrolled
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight -window.innerHeight));
+}, false);
+
+
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <div className = 'App'>
-        <Header/>
       </div>
       <Skills/>
       <div className='rowify'>

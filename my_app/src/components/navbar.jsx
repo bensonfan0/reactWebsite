@@ -3,6 +3,16 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './CSS/navbar.css';
 
+// this will give percentage of page scrolled -> "--scroll" is value of percentage scrolled
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight -window.innerHeight));
+}, false);
+
+const logoHeaderStyle = {
+    color: 'white',
+    fontSize: 36,
+};
+
 function Navbar() {
     // just setting up variables here
     const [click, setClick] = useState(false);
@@ -29,30 +39,27 @@ function Navbar() {
     return (
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                            Welcome!
-                    </Link>
+                    <div className='progress'></div>
+                    <h1 className='my-beautiful-name'>
+                           Benson Fan
+                        </h1>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Section1
-                            </Link>
+                                <a href = "mailto: benson.fan0@gmail.com"><i className="fa fa-envelope-square" style={logoHeaderStyle}></i></a>
+                                <p className='sub-title'>benson.fan0@gmail.com</p>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Section2
-                            </Link>
+                                <a href="https://github.com/bensonfan0" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" style={logoHeaderStyle}></i></a>
+                                <p className="sub-title">github.com/bensonfan0</p>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Section3
-                            </Link>
+                                <i className="fa fa-phone" style={logoHeaderStyle}></i>
+                                <p className='sub-title'>778 - 869 - 1632</p>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>FILLER</Button>}
                 </div>
             </nav>
             

@@ -14,7 +14,8 @@ export default class CollegeHeader extends Component {
                 <img className='image' src={ubcMainMall}/>
                 <img className='ubc-logoWhite' src={whiteUBClogo}/>
                 <img className='ubc-logoBlack' src={blackUBClogo}/>
-                <h1 className="major">3rd Year Computer Science</h1>
+                <h1 className="majorWhite">3rd Year Computer Science</h1>
+                <h1 className="majorBlack">3rd Year Computer Science</h1>
             </div> 
         )
     }

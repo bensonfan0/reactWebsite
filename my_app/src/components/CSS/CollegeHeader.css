@@ -14,14 +14,18 @@
     opacity: 1;
 }
 
-.container:hover .major {
+.container:hover .majorBlack {
     opacity: 1;
+}
+
+.container:hover .majorWhite {
+    opacity: 0;
 }
 
 .ubc-logoWhite {
     padding-top: 0px;
     padding-left: 0px;
-    top: 100%;
+    top: 70%;
     left: 30%;
     width: 60%;
     height: auto;
@@ -36,7 +40,7 @@
     transition: 1s ease;
     padding-top: 0px;
     padding-left: 0px;
-    top: 100%;
+    top: 70%;
     left: 30%;
     width: 60%;
     height: auto;
@@ -58,15 +62,27 @@
     backface-visibility: hidden;
 }
 
-.major {
+.majorBlack {
     opacity: 0;
     transition: 1s ease;
     font-size: 30pt;
     padding-left: 200px;
     padding-top: 0px;
-    top: 110%;
+    top: 80%;
     left: 23%;
     color: #000000;
+    position: absolute;
+}
+
+.majorWhite {
+    opacity: 1;
+    transition: 1s ease;
+    font-size: 30pt;
+    padding-left: 200px;
+    padding-top: 0px;
+    top: 80%;
+    left: 23%;
+    color: #ffffff;
     position: absolute;
 }
 

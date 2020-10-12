@@ -30,6 +30,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!--AOS link styles and scripts-->
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <script src="bower_components/aos/dist/aos.js"></script>
     <!-- Modernizr JS -->
     <script src="%PUBLIC_URL%/js/modernizr-2.6.2.min.js"></script>
 
@@ -40,6 +43,15 @@
     
     <title>Welcome!</title>
   </head>
+   <!--initialize the animations for AOS-->
+   <script>
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

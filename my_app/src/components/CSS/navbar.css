@@ -88,6 +88,9 @@
 }
 
 .sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  /*makes the letters all capitals, small caps are smaller capital*/
+  font-variant: small-caps;
   font-size: calc(15px);
   color: white;
 }

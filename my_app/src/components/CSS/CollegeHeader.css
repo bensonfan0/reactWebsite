@@ -1,8 +1,15 @@
 .container {
-    width: fit-content; 
+    filter:blur(0);
+    background-color: #000000;
+    max-width: 100%;
+    height: 200pt;
+    background-image: url('../../pictures/ubcmainMallpic.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-left: 30px solid #ffffff;
 }
 
-.container:hover .image {
+.container:hover .container{
     opacity: 0.7;
 }
   
@@ -23,32 +30,37 @@
 }
 
 .ubc-logoWhite {
+    opacity: 0;
     padding-top: 0px;
     padding-left: 0px;
-    top: 70%;
-    left: 30%;
+    /*unfortunately this is adjusted manually, not sure how to anchor it to center of background pic*/
+    top: 25%;
+    left: 20%;
+    
     width: 60%;
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-    transition: 1s ease;
+    position: relative;
+    /*I have to make this really fast because I'm using this as "relative" position
+    to make the actual container show up*/
+    transition: 0.25s ease;
 }
 
 .ubc-logoBlack {
-    opacity: 0;
+    opacity: 1;
     transition: 1s ease;
     padding-top: 0px;
     padding-left: 0px;
-    top: 70%;
-    left: 30%;
+    top: 25%;
+    left: 20%;
     width: 60%;
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
 }
-
+/*
 .image {
     filter:blur(1px);
     background-image:url('../../pictures/ubcmainMallpic.jpg');
@@ -61,27 +73,30 @@
     transition: .5s ease;
     backface-visibility: hidden;
 }
+*/
 
 .majorBlack {
-    opacity: 0;
-    transition: 1s ease;
-    font-size: 30pt;
-    padding-left: 200px;
-    padding-top: 0px;
-    top: 80%;
-    left: 23%;
-    color: #000000;
-    position: absolute;
-}
-
-.majorWhite {
     opacity: 1;
     transition: 1s ease;
     font-size: 30pt;
     padding-left: 200px;
     padding-top: 0px;
-    top: 80%;
-    left: 23%;
+    top: 45%;
+    left: 15%;
+    color: #813131;
+    position: absolute;
+}
+
+.majorWhite {
+    opacity: 0;
+    transition: 1s ease;
+    font-size: 30pt;
+    padding-left: 200px;
+    padding-top: 0px;
+    
+    top: 45%;
+    left: 15%;
+    
     color: #ffffff;
     position: absolute;
 }
